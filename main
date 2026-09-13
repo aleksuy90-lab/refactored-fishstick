@@ -705,7 +705,7 @@ def callback_handler(call):
     
     elif data == "support":
         support_id = get_setting('support_id')
-        text = f"🆘 <b>Поддержка</b>\n\nСвяжитесь с нами: @{support_id}\n\n📌 Для быстрого решения пришлите номер заказа."
+        text = f"🆘 <b>Поддержка</b>\n\nСвяжитесь с нами: @{PrimeRbxStore}\n\n📌 Для быстрого решения пришлите номер заказа."
         bot.edit_message_text(text, user_id, call.message.message_id, parse_mode="HTML")
     
     elif data.startswith("get_code_order_"):
